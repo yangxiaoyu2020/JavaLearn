@@ -22,12 +22,16 @@ public class Student extends Person {
     public Student() {
         System.out.println("空的构造器");
     }
+    public Student(double weight, double height) {
+        this.weight = weight;
+        this.height = height;
+    }
 
     private Student(int sno) {
         this.sno = sno;
     }
 
-    Student(int sno, double weight) {
+    protected Student(int sno, double weight) {
         this.sno = sno;
         this.weight = weight;
     }
